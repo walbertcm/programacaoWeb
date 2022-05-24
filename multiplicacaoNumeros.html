@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h2>Multiplicação de Valores</h2>
+
+<input id="numeroA"><br><br>
+
+<input id="numeroB"><br><br>
+
+<button type="button" onclick="multiplicar()">Multiplicar</button>
+
+<h2 id="imprimir"></h2>
+
+<script>
+    function multiplicar(){
+        let x = document.getElementById("numeroA").value;
+        let y = document.getElementById("numeroB").value;
+        let z = x * y;
+        
+        document.getElementById("imprimir").innerHTML = z;
+    }
+</script>
+
+</body>
+</html>

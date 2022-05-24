@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Testar NumerosB</h2>
+
+<input id="numeroA"><br><br>
+
+<button type="button" onclick="testarNumeroB()">TESTAR</button>
+
+<br><br>
+
+<h2 id="imprimir"></h2>
+
+<script>
+    function testarNumeroB(){
+        let a = document.getElementById("numeroA").value;
+        let b;
+
+        if(isNaN(a)|| a < 1){
+            b = "Digite um valor valido";
+            document.getElementById("imprimir").innerHTML = b;
+            document.getElementById("imprimir").style.color='red';
+        } else if ( a>1 && a<10) {
+            b = "Menor que 10";
+            document.getElementById("imprimir").innerHTML = b;
+            document.getElementById("imprimir").style.color='blue';
+        } else {
+            b = "Igual ou Maior que 10";
+            document.getElementById("imprimir").innerHTML = b;
+            document.getElementById("imprimir").style.color='green';
+        }
+
+        
+    }
+</script>
+</body>
+</html>

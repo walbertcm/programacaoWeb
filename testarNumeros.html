@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Testar Numeros</h2>
+
+<input id="numeroA"><br><br>
+
+<button type="button" onclick="testarNumero()">TESTAR</button>
+
+<br><br>
+
+<h2 id="imprimir"></h2>
+
+<script>
+    function testarNumero(){
+        let a = document.getElementById("numeroA").value;
+        let b;
+
+        if(a<10){
+            b = "Menor que 10";
+        } else {
+            b = "Maior que 10"
+        }
+
+        document.getElementById("imprimir").innerHTML = b;
+    }
+</script>
+
+</body>
+</html>

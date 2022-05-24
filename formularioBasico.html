@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 for="fname">Primeiro Nome:</h3>
+    <input type="text" id="nome"><br><br>
+    <input type="text" id="sobrenome"><br><br>
+    <input type="text" id="endereco"><br><br>
+    <label for="bairro">Escolha um Bairro:</label>
+    <select id="bairros" name="bairros">
+      <option value="jiquiri">Jiquiri</option>
+      <option value="aldeia">Aldeia</option>
+      <option value="padreluiz">Padre Luiz</option>
+    </select>
+
+
+    <input type="submit" value="IMPRIMIR" onclick="formulario()">
+
+    <script>
+        function formulario(){
+        let a = document.getElementById("nome").value;
+        let bairro = document.getElementById("bairros").value;
+        document.getElementById("imprimir").innerHTML = a + " " + bairro;
+        }
+    </script>
+
+<h2 id="imprimir"></h2>
+
+</body>
+</html>
